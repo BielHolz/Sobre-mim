@@ -1,0 +1,126 @@
+/* Fonte moderna */
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #000000, #333333);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Seções */
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #111;
+  border-left: 4px solid #000000;
+  padding-left: 10px;
+}
+
+/* Perfil */
+.perfil {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+  width: 220px;
+}
+
+.foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #000000;
+  display: block;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Redes sociais */
+.social-menu {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-menu a {
+  width: 55px;
+  height: 55px;
+  border-radius: 0 28px 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.social-menu a:hover {
+  transform: translateX(10px) scale(1.05);
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Tooltip */
+.social-menu a::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 65px;
+  background: #333;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.social-menu a:hover::after {
+  opacity: 1;
+}
+
+/* Cores oficiais */
+.github   { background: #24292e; }
+.instagram{ background: #E1306C; }
+.whatsapp { background: #25D366; }
